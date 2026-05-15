@@ -50,7 +50,7 @@ jobs:
 
       - name: Post comment if unlabeled
         if: steps.check.outputs.result == 'true'
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           message: 'To maintainers: Please add labels to this PR'
 
