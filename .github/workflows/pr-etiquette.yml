@@ -28,7 +28,7 @@ jobs:
             return String(data.status === 'diverged');
 
       - if: steps.check.outputs.result == 'true'
-        uses: marocchino/sticky-pull-request-comment@v2
+        uses: marocchino/sticky-pull-request-comment@v3
         with:
           message: |
             Please avoid force-pushing to this PR. It makes it harder for reviewers to track what changed since the last review.
